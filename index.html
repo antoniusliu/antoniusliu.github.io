@@ -2,299 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Dondon Dev">
-    <meta name="theme-color" content="#42b549">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonius - Resume</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Antonius Liu</title>
-
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/bootstrap-grid.css"/>
-    <link rel="stylesheet" href="css/bootstrap-reboot.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/main-ipad.css"/>
-    <link rel="stylesheet" href="css/main-iphone-landscape.css"/>
-    <link rel="stylesheet" href="css/main-iphone-portrait.css"/>
-    <link rel="stylesheet" href="css/main-iphone6-landscape.css"/>
-    <link rel="stylesheet" href="css/main-iphone6-portrait.css"/>
-    <link rel="stylesheet" href="css/main-iphoneX-landscape.css"/>
-    <link rel="stylesheet" href="css/main-iphoneX-portrait.css"/>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131047672-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-131047672-1');
-    </script>
+    <style>
+        /* Applying the Inter font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* bg-slate-50 */
+        }
+        /* A little extra spacing for list items */
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
-<body>
-    <!-- HEADER -->
-    <header class="home">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <div class="navbar-brand logo">Dondon Dev</div>
-                <ul class="nav main-nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="/what-i-do.html">What I Do</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/works.html">Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+<body class="text-slate-700">
 
-        <div class="header-message">
-            <h1>SOFTWARE DEVELOPER</h1>
-            <h2>Work smart to build Amazing App</h2>
-        </div>
-    </header>
-    <!-- //HEADER -->
-    <div class="container">
-        <h2 class="first-introduction-text">Check Out Features</h2>
-    </div>
-    <!-- FEATURES -->
-    <div class="home-features">
-        <div class="container">
-            <ul>
-                <li>
-                    <div class="my-card">
-                        <img src="images/feature-backend.png" alt="Rest API">
-                        <h5 class="title">Rest API</h5>
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-4xl p-4 sm:p-6 md:p-12">
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            
+            <!-- Header Section -->
+            <header class="flex flex-col sm:flex-row items-center justify-between mb-10 pb-8 border-b border-slate-200">
+                <div>
+                    <h1 class="text-5xl font-bold text-slate-900">Antonius</h1>
+                    <p class="text-xl text-slate-500 mt-1">Product Management Professional</p>
+                </div>
+                <div class="text-sm text-slate-600 mt-6 sm:mt-0 sm:text-right">
+                    <div class="flex items-center justify-start sm:justify-end mb-2">
+                        <i class="fas fa-phone w-4 mr-2 text-slate-400"></i>
+                        <span>(62) 812 3456 7890</span>
                     </div>
-                </li>
-                <li>
-                    <div class="my-card">
-                        <img src="images/feature-website.png" alt="Website"/>
-                        <h5 class="title">Website</h5>
+                    <div class="flex items-center justify-start sm:justify-end mb-2">
+                        <i class="fas fa-envelope w-4 mr-2 text-slate-400"></i>
+                        <a href="mailto:antonius@gmail.com" class="hover:text-blue-600">antonius@gmail.com</a>
                     </div>
-                </li>
-                <li>
-                    <div class="my-card">
-                        <img src="images/feature-ios.png" alt="iOS App"/>
-                        <h5 class="title">iOS App</h5>
+                    <div class="flex items-center justify-start sm:justify-end mb-2">
+                        <i class="fab fa-linkedin w-4 mr-2 text-slate-400"></i>
+                        <a href="https://linkedin.com/in/antonius" target="_blank" class="hover:text-blue-600">linkedin.com/in/antonius</a>
                     </div>
-                </li>
-                <li>
-                    <div class="my-card">
-                        <img src="images/feature-android.png" alt="Android App"/>
-                        <h5 class="title">Android App</h5>
+                    <div class="flex items-center justify-start sm:justify-end">
+                        <i class="fas fa-map-marker-alt w-4 mr-2 text-slate-400"></i>
+                        <span>South Jakarta, Jakarta</span>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- //FEATURES -->
-    <div class="container">
-        <h2 class="first-introduction-text">How I do it</h2>
-    </div>
+                </div>
+            </header>
 
-    <div class="how-card">
-        <div class="body">
-            <h5 class="title">PLAN</h5>
-            <div class="content">
-                It's your vision, so the ﬁrst thing we do is get round a table and talk through your ideas with you in detail. Using this information, we create a plan that outlines the project objectives and how your business website will work.
-            </div>
-        </div>
-        <img src="images/how-plan.png" alt="Plan">
-    </div>
+            <!-- Main Content -->
+            <main>
+                <!-- Summary Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-4">Summary</h2>
+                    <p class="leading-relaxed">A highly motivated and results-oriented professional with a proven track record of success in product management. Seeking a challenging role where I can utilize my expertise to contribute to the growth and success of a dynamic organization.</p>
+                </section>
 
-    <div class="how-card">
-        <div class="body">
-            <h5 class="title">DESIGN</h5>
-            <div class="content">
-                Once i have a plan, incorporate branding, content strategy, analytics and more, i start the design. I'll turn your vision into your business app, creating your app’s design based on your objectives.
-            </div>
-        </div>
-        <img src="images/how-design.png" alt="Design">
-    </div>
-
-    <div class="how-card">
-        <div class="body">
-            <h5 class="title">DEVELOP</h5>
-            <div class="content">
-                This is where i make the design come to life. After create interface, it's time for us to start developing. Based on your vision, we will integrate the customised features and functions outlined in the initial plan.
-            </div>
-        </div>
-        <img src="images/how-develop.png" alt="Develop">
-    </div>
-
-    <div class="how-card">
-        <div class="body">
-            <h5 class="title">DEPLOY</h5>
-            <div class="content">
-                Your app’s is almost complete. I'll test it, refining it as i go, and then ready for launching. Your app’s is now live, built around your specific objectives and to your vision. Now you can control that by your self.
-            </div>
-        </div>
-        <img src="images/how-deploy.png" alt="Deploy">
-    </div>
-
-    <footer>
-        <div class="footer-message">
-            <div class="footer-bar"></div>
-            <div class="container">
-                <div id="footer-carousel">
-                    <img src="images/arrow-left.png" class="arrow" id="button-prev"/>
-                    <div id="slides">
-                        <ul>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        <span class="quote-marks">"</span>I never Lose<span class="quote-marks">"</span>
-                                        <br>
-                                        I either <b>win</b> or <b>learn</b>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Nelson Mandela</p>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        <span class="quote-marks">"</span>I am not failed<span class="quote-marks">"</span><br>
-                                        It was learning <b>Experience</b>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Anonymous</p>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        Live as if you were die <b>tomorrow</b>.<br>
-                                        Learn as if you were to live <b>forever</b>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Mahatma Gandhi</p>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        <span class="quote-marks">"</span>
-                                        You don't learn to walk by following rules. You learn by doing. and by <b>falling over</b>
-                                        <span class="quote-marks">"</span>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Richard Branson</p>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        <span class="quote-marks">"</span>
-                                        Get busy <b>living</b>
-                                        <span class="quote-marks">"</span>
-                                        <br>
-                                        OR
-                                        <br>
-                                        <span class="quote-marks">"</span>
-                                        Get busy <b>dying</b>
-                                        <span class="quote-marks">"</span>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Stephen King</p>
-                                </div>
-                            </li>
+                <!-- Experience Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-6">Experience</h2>
+                    <div class="mb-6">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-semibold text-slate-900">Senior Product Manager</h3>
+                            <p class="text-sm font-medium text-slate-500">Jan 2020 - Present</p>
+                        </div>
+                        <p class="text-md text-slate-600 italic">Tech Innovators Inc.</p>
+                        <ul class="list-disc list-inside mt-3 text-slate-600 leading-relaxed">
+                            <li>Led the development and launch of three successful products, resulting in a 30% increase in user engagement.</li>
+                            <li>Collaborated with cross-functional teams, including engineering, design, and marketing, to define product strategy and roadmap.</li>
+                            <li>Conducted market research and competitive analysis to identify new opportunities and inform product decisions.</li>
                         </ul>
                     </div>
-                    <img src="images/arrow-right.png" class="arrow" id="button-next"/>
-                </div>
-            </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-semibold text-slate-900">Product Manager</h3>
+                            <p class="text-sm font-medium text-slate-500">Jun 2017 - Dec 2019</p>
+                        </div>
+                        <p class="text-md text-slate-600 italic">Digital Solutions Co.</p>
+                        <ul class="list-disc list-inside mt-3 text-slate-600 leading-relaxed">
+                            <li>Managed the entire product lifecycle, from ideation to launch and iteration.</li>
+                            <li>Gathered and prioritized customer requirements through user interviews, surveys, and data analysis.</li>
+                            <li>Worked closely with the development team to ensure timely delivery of high-quality features.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="mb-10">
+                    <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-6">Education</h2>
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-slate-900">Master of Business Administration (MBA)</h3>
+                        <p class="text-md text-slate-600 italic">University of Indonesia</p>
+                        <p class="text-sm font-medium text-slate-500">2015 - 2017</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-900">Bachelor of Science in Computer Science</h3>
+                        <p class="text-md text-slate-600 italic">Bandung Institute of Technology (ITB)</p>
+                        <p class="text-sm font-medium text-slate-500">2011 - 2015</p>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-4">Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Product Management</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Agile Methodologies</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Market Research</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Data Analysis</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Leadership</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Communication</span>
+                    </div>
+                </section>
+            </main>
+
         </div>
-        <div class="footer-copyright">
-            Dondon Dev © 2018 All Rights Reserved.
-        </div>
-    </footer>
-    <script>
-        $(document).ready(function () {
-            //rotation speed and timer
-            var speed = 5000;
+    </div>
 
-            var run = setInterval(rotate, speed);
-            var slides = $('.slide');
-            var container = $('#slides ul');
-            var elm = container.find(':first-child').prop("tagName");
-            var item_width = container.width();
-            slides.width(item_width); //set the slides to the correct pixel width
-            container.parent().width(item_width);
-            container.width(slides.length * item_width); //set the slides container to the correct total width
-            container.find(elm + ':first').before(container.find(elm + ':last'));
-            resetSlides();
-
-
-            //if user clicked on prev button
-
-            $('#button-prev').click(function (e) {
-                // slide the item
-                if (container.is(':animated')) {
-                    return false;
-                }
-
-                container.stop().animate({
-                    'left': 0
-                }, 1500, function () {
-                    container.find(elm + ':first').before(container.find(elm + ':last'));
-                    resetSlides();
-                });
-
-                // cancel the link behavior
-                return false;
-
-            });
-
-            $('#button-next').click(function (e) {
-                // slide the item
-                if (container.is(':animated')) {
-                    return false;
-                }
-
-                container.stop().animate({
-                    'left': item_width * -2
-                }, 1500, function () {
-                    container.find(elm + ':last').after(container.find(elm + ':first'));
-                    resetSlides();
-                });
-
-                // cancel the link behavior
-                return false;
-            });
-
-            // if mouse hover, pause the auto rotation, otherwise rotate it
-            container.parent().mouseenter(function () {
-                clearInterval(run);
-            }).mouseleave(function () {
-                run = setInterval(rotate, speed);
-            });
-
-
-            function resetSlides() {
-                // and adjust the container so current is in the frame
-                container.css({
-                    'left': -1 * item_width
-                });
-            }
-
-        });
-
-        // a simple function to click next link
-        // a timer will call this function, and the rotation will begin
-        function rotate() {
-            $('#button-next').click();
-        }
-    </script>
 </body>
 </html>
